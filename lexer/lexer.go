@@ -166,7 +166,7 @@ func (l *Lexer) readNumber() string {
 
 // readString reads a single-quoted string literal.
 // The opening quote has already been consumed when this is called.
-// It handles escaped quotes ('') inside strings.
+// It handles escaped quotes (”) inside strings.
 func (l *Lexer) readString() (string, error) {
 	// Skip the opening quote
 	l.readChar()
